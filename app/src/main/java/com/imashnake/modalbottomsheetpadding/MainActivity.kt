@@ -51,12 +51,12 @@ class MainActivity : ComponentActivity() {
                     }
 
                     if (isBottomSheetVisible)
-                    ModalBottomSheet(
-                        sheetState = bottomSheetState,
-                        onDismissRequest = { isBottomSheetVisible = false }
-                    ) {
-                        Text(text = "hello", modifier = Modifier.fillMaxSize())
-                    }
+                        ModalBottomSheet(
+                            sheetState = bottomSheetState,
+                            onDismissRequest = { isBottomSheetVisible = false }
+                        ) {
+                            Text(text = "hello", modifier = Modifier.fillMaxSize())
+                        }
                 }
             }
         }
