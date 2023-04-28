@@ -1,2 +1,2 @@
-# ModalBottomSheetPadding
-Sample app demonstrating padding issue
+# `ModalBottomSheet` Padding
+Sample app demonstrating padding issue.
