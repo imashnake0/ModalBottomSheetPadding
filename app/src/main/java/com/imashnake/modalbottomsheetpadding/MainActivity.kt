@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
@@ -52,6 +53,7 @@ class MainActivity : ComponentActivity() {
 
                     if (isBottomSheetVisible)
                         ModalBottomSheet(
+                            modifier = Modifier.fillMaxWidth(),
                             sheetState = bottomSheetState,
                             onDismissRequest = { isBottomSheetVisible = false }
                         ) {
